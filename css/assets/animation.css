@@ -1,0 +1,26 @@
+@keyframes navitem {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes textanimi {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 32ch;
+  }
+}
+
+@keyframes iconanimi {
+  from {
+    box-shadow: 0px 0px 0px #0ec080;
+  }
+  to {
+    box-shadow: 0px 0px 30px #0ec080;
+  }
+}

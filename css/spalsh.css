@@ -1,0 +1,312 @@
+@keyframes navitem {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes textanimi {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 32ch;
+  }
+}
+
+@keyframes iconanimi {
+  from {
+    box-shadow: 0px 0px 0px #0ec080;
+  }
+  to {
+    box-shadow: 0px 0px 30px #0ec080;
+  }
+}
+
+body {
+  background: #e3e3e3;
+}
+
+.navbar-default {
+  padding: 20px 0px;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+  border-color: white;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-header .navbar-toggle:hover, .navbar-default .navbar-header .navbar-toggle:focus {
+  background-color: #0ec080;
+}
+
+.navbar-default .navbar-header .navbar-toggle .icon-bar {
+  background: white;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-default .navbar-nav {
+  perspective: 2000px;
+}
+
+.navbar-default .navbar-nav > li a {
+  color: white;
+  transition: .3s;
+}
+
+.navbar-default .navbar-nav > li:hover > a {
+  animation: navitem .5s forwards;
+  background: #0ec080;
+  color: white;
+}
+
+#landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/coffee-desk-laptop-notebook.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 720px;
+}
+
+#landing .col-sm-12 {
+  padding: 250px 15px;
+  color: white;
+  z-index: 10;
+}
+
+#landing .col-sm-12 h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#landing .col-sm-12 h3 {
+  font-size: 2.5em;
+}
+
+#landing .col-sm-12 .btn {
+  box-sizing: border-box;
+  background: #0ec080;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px 0px 10px 0px;
+  transition: .5s;
+}
+
+#landing .col-sm-12 .btn:hover {
+  background: #10d890;
+  border-radius: 0px 10px 0px 10px;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 720px !important;
+}
+
+#aboutus {
+  padding: 50px 0px;
+}
+
+#aboutus .text-section {
+  padding: 100px 15px;
+}
+
+#aboutus .img-section .col-sm-6 {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+#aboutus .img-section .overly {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(0);
+  transition: .5s;
+}
+
+#aboutus .img-section .overly .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#aboutus .img-section .col-sm-6:hover .overly {
+  transform: scale(1);
+}
+
+#services {
+  padding: 50px 0px;
+  background: white;
+}
+
+#services .col-sm-4 {
+  padding: 30px 20px;
+  background: white;
+  transition: .5s;
+}
+
+#services .col-sm-4:hover {
+  background: #e3e3e3;
+}
+
+#services .col-sm-4:hover .fa {
+  animation: iconanimi 2s;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#services .col-sm-4 .fa {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  padding: 20px;
+  color: #0ec080;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#pricing {
+  padding: 50px 0px;
+}
+
+#pricing .panel-default {
+  border: 1px solid #0ec080;
+  transition: .3s;
+}
+
+#pricing .panel-default:hover {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+#pricing .panel-default .panel-heading {
+  background: white;
+  border-bottom: 1px solid #0ec080;
+}
+
+#pricing .panel-default .panel-body {
+  background: white;
+  border-bottom: 1px solid #0ec080;
+}
+
+#pricing .panel-default .panel-footer {
+  background: white;
+}
+
+#advice {
+  padding: 100px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/monkey-puzzle-1920-1080-4060.jpg") no-repeat;
+  background-position: center;
+  color: white;
+}
+
+#advice footer {
+  color: white;
+  font-size: 22px;
+}
+
+#mentors {
+  padding: 50px 0px;
+}
+
+#mentors .thumbnail {
+  padding: 0 0 15px 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: .5s;
+}
+
+#mentors .thumbnail:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#mentors .thumbnail .wraper {
+  position: relative;
+}
+
+#mentors .thumbnail .overly {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  height: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  transition: .4s;
+}
+
+#mentors .thumbnail .overly .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mentors .thumbnail .wraper:hover .overly {
+  height: 100%;
+}
+
+#blog {
+  padding: 50px 0px;
+  background: white;
+}
+
+#footer {
+  padding: 30px 0px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 10px;
+}
+
+#footer a .fa {
+  font-size: 30px;
+  color: inherit;
+}
+
+#footer a .fa:hover {
+  color: white;
+}
+
+.text-ored {
+  color: #0ec080;
+}
+
+.text-big {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: 16px !important;
+}
+
+.btn-success {
+  background-color: #0ec080;
+  border-color: #0ec080;
+}
+
+.btn-success:hover {
+  background-color: #0fce8a;
+  border-color: #0ec080;
+}

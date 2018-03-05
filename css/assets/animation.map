@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/assets/animation.css",
+	"sources": [
+		"../../sass/assets/animation.scss"
+	],
+	"sourcesContent": [
+		"@keyframes navitem{\r\n    0%{\r\n        transform: rotateX(0deg);\r\n        background: transparent;\r\n    }\r\n    50%{\r\n        transform: rotateX(90deg);\r\n    }\r\n    100%{\r\n        transform: rotateX(0deg);\r\n        background: #fff;\r\n    }\r\n}\r\n@keyframes textanimi{\r\n    from{\r\n        width: 0ch;\r\n    }\r\n    to{\r\n        width: 32ch;\r\n    }\r\n}"
+	],
+	"mappings": "AAAA,UAAU,CAAV,OAAU;EACN,AAAA,EAAE;IACE,SAAS,EAAE,aAAO;IAClB,UAAU,EAAE,WAAY;;EAE5B,AAAA,GAAG;IACC,SAAS,EAAE,cAAO;;EAEtB,AAAA,IAAI;IACA,SAAS,EAAE,aAAO;IAClB,UAAU,EAAE,IAAK;;;;AAGzB,UAAU,CAAV,SAAU;EACN,AAAA,IAAI;IACA,KAAK,EAAE,GAAI;;EAEf,AAAA,EAAE;IACE,KAAK,EAAE,IAAK",
+	"names": []
+}
