@@ -33,6 +33,7 @@ body {
   padding: 20px 0px;
   background-color: transparent;
   border-bottom: none;
+    transition: .5s;
 }
 
 .navbar-default .navbar-header .navbar-toggle {
